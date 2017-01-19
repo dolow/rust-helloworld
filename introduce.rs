@@ -10,16 +10,12 @@ struct Smith;
 
 trait Indivisual
 {
-    fn new() -> Self;
-    
     fn name(&self) -> &'static str;
     fn age(&self)  -> i32;
 }
 
 trait Employee
 {
-    fn new() -> Self;
-
     fn since(&self)      -> WorkInfo;
     fn division(&self)   -> WorkInfo;
     fn group(&self)      -> WorkInfo;
@@ -28,16 +24,12 @@ trait Employee
 
 impl Indivisual for Smith
 {
-    fn new() -> Self { Smith }
-    
     fn name(&self) -> &'static str { "smith" }
     fn age(&self)  ->          i32 { 33      }
 }
 
 impl Employee for Smith
 {
-    fn new() -> Self { Smith }
-    
     fn since(&self)      -> WorkInfo { WorkInfo::Since(2011)                  }
     fn division(&self)   -> WorkInfo { WorkInfo::Division("Client Architect") }
     fn group(&self)      -> WorkInfo { WorkInfo::Group("Game Architect")      }
