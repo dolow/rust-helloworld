@@ -8,7 +8,7 @@ enum WorkInfo
 
 struct Smith;
 
-trait Indivisual
+trait Individual
 {
     fn name(&self) -> &'static str;
     fn age(&self)  -> i32;
@@ -22,7 +22,7 @@ trait Employee
     fn occupation(&self) -> WorkInfo;
 }
 
-impl Indivisual for Smith
+impl Individual for Smith
 {
     fn name(&self) -> &'static str { "smith" }
     fn age(&self)  ->          i32 { 33      }
@@ -40,7 +40,7 @@ impl Smith
 {
     fn introduce(&self)
     {
-        println!("As an indivisual");
+        println!("As an individual");
         
         println!("  name       : {}", self.name());
         println!("  age        : {}", self.age());
