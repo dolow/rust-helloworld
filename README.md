@@ -12,4 +12,4 @@ run
 
 # Prerequisites
 
-download and install __rustc__ from http://rustbyexample.com .
+download and install __rustc__ from https://www.rust-lang.org .
